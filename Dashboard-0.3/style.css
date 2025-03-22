@@ -1434,8 +1434,16 @@
   left: 1px;
   background-color: #ffffff;
   border-radius: 5px;
-  box-shadow: inset 0px 1px 4.3px #d6e4ff;
+  /* box-shadow: inset 0px 1px 4.3px #3d66b6; */
+  transition: background-color 0.3s ease, cursor 0.1s ease;
 }
+
+/* Change background color and cursor on hover */
+.dashboard .rectangle-2:hover {
+  background-color: #95afc7; /* Light blue */
+  cursor: pointer;
+}
+
 
 .dashboard .rectangle-3 {
   position: absolute;
@@ -1445,7 +1453,14 @@
   left: 1px;
   background-color: #ffffff;
   border-radius: 5px;
-  box-shadow: inset 0px 1px 4.3px #d7e3ff;
+  /* box-shadow: inset 0px 1px 4.3px #d7e3ff; */
+  transition: background-color 0.3s ease, cursor 0.1s ease;
+}
+
+/* Hover effect */
+.dashboard .rectangle-3:hover {
+  background-color: #95afc7; /* Light blue */
+  cursor: pointer;
 }
 
 .dashboard .rectangle-4 {
