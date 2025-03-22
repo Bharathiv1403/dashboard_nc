@@ -19,8 +19,7 @@
   height: 1024px;
   top: 0;
   left: 0;
-  background: rgb(247,247,247);
-  background: radial-gradient(circle, rgba(247,247,247,1) 0%, rgba(61,192,199,1) 32%); 
+  background-color: #ffffff;
 }
 
 .dashboard .home-sharp {
@@ -40,6 +39,97 @@
   left: 27px;
   object-fit: cover;
 }
+
+
+/* Chat_application_start_code */
+
+.android-compact {
+  width: 443px;
+  height: 600px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  transition: transform 0.3s ease;
+  border: 1px solid #ccc;
+}
+.zoomed {
+  transform: scale(1.1);
+}
+.controls {
+  margin-top: 10px;
+}
+.controls button {
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  background: #00a3ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.frame-2,
+.frame-3, 
+.frame-4,
+.frame-5,
+.frame-6,
+.frame-7,
+.frame-8,
+.frame-9,
+.frame-10,
+.frame-11,
+.frame-11-1{
+  display: flex;
+  width: 443px;
+  height: 82px;
+  align-items: center;
+  gap: 18px;
+  padding: 13px 23px;
+  /* border: 0 solid #dadada; */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.frame-2:hover,
+.frame-3:hover,
+.frame-4:hover,
+.frame-5:hover,
+.frame-6:hover,
+.frame-7:hover,
+.frame-8:hover,
+.frame-9:hover,
+.frame-10:hover,
+.frame-11:hover,
+.frame-11-1:hover {
+  background-color: lightblue;
+  transform: scale(1.05);
+}
+
+.img{
+  width: 51.62px;
+  height: 54.58px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.search-box {
+  width: 0;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-container.active .search-box {
+  width: 200px;
+  opacity: 1;
+}
+.search-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  
+}
+
+
 
 .dashboard .android-compact {
   width: 443px;
@@ -76,16 +166,16 @@
 
 .dashboard .frame {
   display: flex;
-  width: 34px;
+  width: 36px;
   height: 36px;
   align-items: center;
   gap: 10px;
   padding: 5px;
   position: absolute;
-  top: 76px;
-  left: 347px;
+  top: 20px;
+  left: 380px;
   background-color: #00a3ff;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .dashboard .fe-plus {
@@ -114,8 +204,8 @@
   position: absolute;
   top: 135px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #b8b8b8;
+  border: 0.001px solid;
+  border-color: #c2ddf7;
 }
 
 .dashboard .img {
@@ -159,7 +249,7 @@
 
 .dashboard .text-wrapper-3 {
   position: relative;
-  width: 61px;
+  width: 51px;
   height: 40px;
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
@@ -180,8 +270,8 @@
   position: absolute;
   top: 217px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #afafaf;
+  border: 0.01px solid;
+  border-color: #c2ddf7
 }
 
 .dashboard .group-2 {
@@ -218,7 +308,7 @@
 
 .dashboard .text-wrapper-6 {
   position: relative;
-  width: 60px;
+  width: 75px;
   height: 40px;
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
@@ -228,6 +318,8 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
+
 
 .dashboard .frame-4 {
   display: flex;
@@ -239,8 +331,8 @@
   position: absolute;
   top: 299px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #ababab;
+  border: 0.001px solid;
+  border-color: #c2ddf7
 }
 
 .dashboard .group-3 {
@@ -287,6 +379,7 @@
   position: relative;
   background-color: #00a3ff;
   border-radius: 10px;
+  top: -13px;
 }
 
 .dashboard .text-wrapper-9 {
@@ -312,8 +405,8 @@
   position: absolute;
   top: 381px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #b9b9b9;
+  border: 0.01px solid;
+  border-color: #c2ddf7
 }
 
 .dashboard .group-4 {
@@ -345,8 +438,8 @@
   position: absolute;
   top: 463px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #b9b9b9;
+  border: 0.001px solid;
+  border-color: #c2ddf7
 }
 
 .dashboard .group-5 {
@@ -378,8 +471,8 @@
   position: absolute;
   top: 545px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #b9b9b9;
+  border: 0.01px solid;
+  border-color: #c2ddf7
 }
 
 .dashboard .group-6 {
@@ -398,8 +491,8 @@
   position: absolute;
   top: 627px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #b9b9b9;
+  border: 0.001px solid;
+  border-color: #c2ddf7
 }
 
 .dashboard .text-wrapper-12 {
@@ -425,8 +518,8 @@
   position: absolute;
   top: 709px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #b9b9b9;
+  border: 0.01px solid;
+  border-color: #c2ddf7
 }
 
 .dashboard .frame-10 {
@@ -439,8 +532,8 @@
   position: absolute;
   top: 791px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #b9b9b9;
+  border: 0.001px solid;
+  border-color: #c2ddf7
 }
 
 .dashboard .frame-11 {
@@ -453,9 +546,25 @@
   position: absolute;
   top: 873px;
   left: 0;
-  border: 0.2px solid;
-  border-color: #b9b9b9;
+  border: 0.01px solid;
+  border-color: #c2ddf7
 }
+.dashboard .frame-11-1 {
+  display: flex;
+  width: 443px;
+  height: 82px;
+  align-items: center;
+  gap: 20px;
+  padding: 13px 23px;
+  position: absolute;
+  top: 953px;
+  left: 0;
+  border: 0.01px solid;
+  border-color: #c2ddf7
+}
+
+
+/* Chat_application_end_code */
 
 .dashboard .android-compact-2 {
   width: 834px;
@@ -502,10 +611,12 @@
 
 .dashboard .icon-search {
   position: absolute;
-  width: 60px;
-  height: 18px;
-  top: 4px;
-  left: 8px;
+  width: 15px;
+  height: 12px;
+  top: 7px;
+  left: 5px;
+  text-align: center;
+  border-color: #386bfc;
 }
 
 .dashboard .video-call-wrapper {
@@ -704,6 +815,47 @@
   top: 33px;
   left: 0;
 }
+
+.dashboard .container-10,
+.dashboard .container-11,
+.dashboard .container-12,
+.dashboard .container-13,
+.dashboard .container-14,
+.dashboard .container-15 {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 17.5px;
+  background-color: #efefef; /* Default background */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Change color on mouse hover */
+.dashboard .container-10:hover,
+.dashboard .container-11:hover,
+.dashboard .container-12:hover,
+.dashboard .container-13:hover,
+.dashboard .container-14:hover,
+.dashboard .container-15:hover {
+  background-color: gray;
+}
+
+/* Change color on mouse click */
+.dashboard .container-10:active,
+.dashboard .container-11:active,
+.dashboard .container-12:active,
+.dashboard .container-13:active,
+.dashboard .container-14:active,
+.dashboard .container-15:active {
+  background-color: blue;
+}
+
+
+
 
 .dashboard .container-10 {
   display: flex;
@@ -959,9 +1111,17 @@
   left: 93px;
   background-color: #bdeb4d87;
   border-radius: 15px;
-  border: 1px solid;
-  border-color: #bdeb4d;
+  border: 1px solid #bdeb4d;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
+
+/* Mouse hover effect */
+.dashboard .background-2:hover {
+  background-color: lightblue;
+  transform: scale(1.1); /* Zoom in */
+}
+
 
 .dashboard .container-16 {
   display: flex;
@@ -1144,9 +1304,14 @@
   border-color: #f89321;
 }
 
+.dashboard .background-3:hover {
+  background-color: lightblue;
+  transform: scale(1.1); /* Zoom in */
+}
+
 .dashboard .text-wrapper-29 {
   position: relative;
-  width: 100%;
+  width: 83px;
   margin-top: -1.00px;
   font-family: "Roboto-Medium", Helvetica;
   font-weight: 500;
@@ -1183,9 +1348,17 @@
   left: 105px;
   background-color: #70cbff87;
   border-radius: 15px;
-  border: 1px solid;
-  border-color: #70cbff;
+  border: 1px solid #70cbff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
+
+/* Mouse hover effect */
+.dashboard .background-4:hover {
+  background-color: lightblue;
+  transform: scale(1.1); /* Zoom in */
+}
+
 
 .dashboard .manager-meet-with {
   position: absolute;
@@ -1286,12 +1459,27 @@
   justify-content: center;
   padding: 10.5px 17.06px 10.5px 17.05px;
   position: absolute;
-  top: 531px;
-  left: 356px;
-  background-color: #0a63fd;
+  top: 541px;
+  left: 366px;
+  background-color: #386bfc;
   border-radius: 25px;
   box-shadow: 0px 4px 10px #6c5ce74c;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
+
+/* Hover effect - slightly enlarges and enhances shadow */
+.dashboard .background-shadow:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px #6c5ce78f;
+}
+
+/* Click effect - scales down slightly for a "pressed" look */
+.dashboard .background-shadow:active {
+  transform: scale(0.2);
+  box-shadow: 0px 2px 5px #6c5ce7a3;
+}
+
 
 .dashboard .text-wrapper-34 {
   position: relative;
@@ -1348,10 +1536,10 @@
   position: relative;
   width: 412px;
   height: 581px;
-  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.257) 100%);
+  background-color: #fcfdff;
   border-radius: 10px;
   border: 1px solid;
-  border-color: #1b1a1a;
+  border-color: #b2b2b2;
 }
 
 .dashboard .search-bar {
@@ -1427,41 +1615,89 @@
   font-style: var(--default-size-body-font-style);
 }
 
-.dashboard .rectangle-2,
-.dashboard .rectangle-3,
-.dashboard .rectangle-4,
-.dashboard .rectangle-5,
-.dashboard .rectangle-6 {
+.dashboard .rectangle-2 {
   position: absolute;
   width: 410px;
   height: 92px;
+  top: 110px;
   left: 1px;
-  background: rgb(119, 53, 53);
-background: linear-gradient(0deg, rgb(235, 232, 232) 0%, rgba(235, 233, 233, 0.257) 100%);
+  background-color: #ffffff;
   border-radius: 5px;
-  
-  transition: background-color 0.12s ease, transform 0.12s ease, box-shadow 0.12s ease;
-  /* cursor: pointer; */
+  /* box-shadow: inset 0px 1px 4.3px #3d66b6; */
+  transition: background-color 0.3s ease, cursor 0.1s ease;
 }
 
-/* Positioning for each rectangle */
-.dashboard .rectangle-2 { top: 110px; }
-.dashboard .rectangle-3 { top: 202px; }
-.dashboard .rectangle-4 { top: 294px; height: 91px; } /* Adjusted height */
-.dashboard .rectangle-5 { top: 385px; }
-.dashboard .rectangle-6 { top: 477px; height: 102px; } /* Adjusted height */
-
-/* Faster hover effect */
-.dashboard .rectangle-2:hover,
-.dashboard .rectangle-3:hover,
-.dashboard .rectangle-4:hover,
-.dashboard .rectangle-5:hover,
-.dashboard .rectangle-6:hover {
-  background-color: #005a4b69; /* Light blue */
-  transform: translateY(-5px); /* Moves the element up */
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); /* Stronger floating effect */
+/* Change background color and cursor on hover */
+.dashboard .rectangle-2:hover {
+  background-color: #95afc7; /* Light blue */
+  cursor: pointer;
 }
 
+
+.dashboard .rectangle-3 {
+  position: absolute;
+  width: 410px;
+  height: 92px;
+  top: 202px;
+  left: 1px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  /* box-shadow: inset 0px 1px 4.3px #d7e3ff; */
+  transition: background-color 0.3s ease, cursor 0.1s ease;
+}
+
+/* Hover effect */
+.dashboard .rectangle-3:hover {
+  background-color: #95afc7; /* Light blue */
+  cursor: pointer;
+}
+
+.dashboard .rectangle-4 {
+  position: absolute;
+  width: 410px;
+  height: 91px;
+  top: 294px;
+  left: 1px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 4.3px #d7e3ff;
+}
+
+.dashboard .rectangle-5 {
+  position: absolute;
+  width: 410px;
+  height: 92px;
+  top: 385px;
+  left: 1px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 4.3px #d7e3ff;
+}
+
+.dashboard .rectangle-6 {
+  position: absolute;
+  width: 410px;
+  height: 102px;
+  top: 477px;
+  left: 1px;
+  background-color: #ffffff;
+  border-radius: 5px 5px 10px 10px;
+  box-shadow: inset 0px 1px 4.3px #d7e3ff;
+}
+
+.dashboard .text-wrapper-36 {
+  position: absolute;
+  width: 256px;
+  height: 17px;
+  top: 168px;
+  left: 95px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
 
 .dashboard .text-wrapper-37 {
   width: 256px;
@@ -1835,43 +2071,13 @@ background: linear-gradient(0deg, rgb(235, 232, 232) 0%, rgba(235, 233, 233, 0.2
   object-fit: cover;
 }
 
-/* .dashboard .expand-2 {
-  position: absolute;
-  width: 23px;
-  height: 21px;
-  top: 7px;
-  left: 379px;
-} */
-
 .dashboard .expand-2 {
   position: absolute;
   width: 23px;
   height: 21px;
   top: 7px;
   left: 379px;
-  transition: all 0.3s ease; 
-  z-index: 1; /* Default */
 }
-
-.dashboard .expand-2:hover {
-  background-color: #949292; /* Light blue */
-  cursor: pointer;
-  z-index: 999; /* Bring it to the front */
-}
-
-.dashboard .expand-2 img {
-  position: relative; /* Allows z-index to work */
-  z-index: 1; /* Default */
-  transition: all 0.3s ease;
-}
-
-.dashboard .expand-2:hover img {
-  z-index: 999; /* Brings the image to the front */
-}
-
-
-
-
 
 .dashboard .group-7 {
   position: absolute;
